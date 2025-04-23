@@ -72,11 +72,53 @@ export default function Home() {
                   </div>
 
                   <div className="basis-2/3 text-center">
-                    <h3 className="text-lg font-semibold mb-1">ことわざの輪</h3>
-                    <p className="text-gray-600">
-                      TypeScript + Next.js
-                      で開発したSNSアプリ。ユーザー認証やデータベース連携にSupabaseを使用。
-                    </p>
+                    <h3 className="text-4xl font-semibold mb-1">
+                      ことわざの輪
+                    </h3>
+                    {/* ことわざの輪説明欄 */}
+                    <div className="flex justify-center">
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            使用技術
+                          </span>
+                          <span>
+                            : TypeScript / Next.js / Supabase / React / axios /
+                            JWT / zod / bcrypt / TailwindCSS
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            作成経緯
+                          </span>
+                          <span className="text-left">
+                            : React,Next.jsの勉強のために制作。
+                            <br />
+                            また気軽に短いことわざを発信できれば面白そうだと感じた
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            工夫した点
+                          </span>
+                          <span className="text-left">
+                            : TailwindCSSを使うことによるレスポンシブ対応の実現
+                            <br />
+                            イイねボタンを押したりコメントをした際に値を一時的に増やしてすぐ画面に反映するようにした点
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            自慢ポイント
+                          </span>
+                          <span className="text-left">
+                            : フロントエンドでのよく使われる機能を取り入れた点
+                            <br />
+                            UXを意識し使いやすいアプリを制作した。
+                          </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -110,12 +152,53 @@ export default function Home() {
 
                   <div className="basis-2/3 text-center">
                     <h3 className="text-lg font-semibold mb-1">
-                      特殊カードジャンケン
+                      特殊カードジャンケン(無料版renderでデプロイしているため動かない可能性があります)
                     </h3>
-                    <p className="text-gray-600">
-                      リアルタイム対戦のジャンケンカードゲームを React で開発。
-                      Socket.io で通信、Next.js でフロント実装。
-                    </p>
+                    <div className="flex justify-center">
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            使用技術
+                          </span>
+                          <span>
+                            : TypeScript / Next.js / socket.io / Node.js /
+                            Express / React / TailwindCSS
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            作成経緯
+                          </span>
+                          <span className="text-left">
+                            :
+                            リアルタイム通信ができるアプリを制作したかったため作成
+                            <br /> 　中学時代の遊びをwebで再現できて楽しかった
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            工夫した点
+                          </span>
+                          <span className="text-left">
+                            :
+                            socketIdをContextで管理することによりページ移動しても使用しやすい形にした点
+                            <br />
+                            　友達に確認してもらいゲームバランスやUI/UXの改善を求めた点
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            自慢ポイント
+                          </span>
+                          <span className="text-left">
+                            :
+                            画面の情報を少なくすることで一目で分かりやすいUIになるように意識した
+                            <br />
+                            UIをコンポーネント化したり手札画像のURLを辞書でまとめたりすることで汎用性のあるコードの製作
+                          </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,10 +232,49 @@ export default function Home() {
 
                   <div className="basis-2/3 text-center">
                     <h3 className="text-lg font-semibold mb-1">量子五目並べ</h3>
-                    <p className="text-gray-600">
-                      オリジナル量子ルールを追加した五目並べを TypeScript
-                      で実装。 盤面状態をビジュアル化し、学習用に最適化。
-                    </p>
+                    <div className="flex justify-center">
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            使用技術
+                          </span>
+                          <span>: JavaScript </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            作成経緯
+                          </span>
+                          <span className="text-left">
+                            : 4人グループでパズルゲームを制作する授業での開発
+                            <br />
+                            “せっかくなら本気で作ろう”
+                            と決め、4人で役割分担し協力して完成
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            工夫した点
+                          </span>
+                          <span className="text-left">
+                            :
+                            他の人が読んでも分かりやすいコードを意識して、関数や一機能ごとにコメントアウトをつけた
+                            <br />
+                            他のメンバーの開発が終わった時点でコードと動作を確認し不具合を指摘し減らした点
+                          </span>
+                        </span>
+                        <span className="flex">
+                          <span className="w-24 font-semibold shrink-0 text-left">
+                            自慢ポイント
+                          </span>
+                          <span className="text-left">
+                            :
+                            チームのリーダーとしてグループ間でのやり取りを行った
+                            <br />
+                            報告を行ったり追加する機能の役割分担を決めたりするのが大変だった
+                          </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -170,7 +292,6 @@ export default function Home() {
               <tr>
                 <th className="px-4 py-2 text-left">分類</th>
                 <th className="px-4 py-2 text-left">技術</th>
-                <th className="px-4 py-2 text-left">期間</th>
                 <th className="px-4 py-2 text-left">主な用途・実績</th>
               </tr>
             </thead>
@@ -180,23 +301,18 @@ export default function Home() {
                 <td className="px-4 py-2">
                   TypeScript, React, Next.js, Tailwind CSS
                 </td>
-                <td className="px-4 py-2">2024/07〜現在</td>
-                <td className="px-4 py-2">
-                  Web開発において、フロントエンドの基盤として使用
-                </td>
+                <td className="px-4 py-2">Web開発において積極的に使用</td>
               </tr>
               <tr>
                 <td className="px-4 py-2">バックエンド</td>
-                <td className="px-4 py-2">Node.js, Express, Supabase</td>
-                <td className="px-4 py-2">2024/07〜現在</td>
                 <td className="px-4 py-2">
-                  API / ツール開発、認証・データベースに使用
+                  Node.js, Express, Supabase, TypeScript
                 </td>
+                <td className="px-4 py-2">データベースやAPIのやり取りに使用</td>
               </tr>
               <tr>
                 <td className="px-4 py-2">リアルタイム通信</td>
                 <td className="px-4 py-2">Socket.io</td>
-                <td className="px-4 py-2">2025/01〜現在</td>
                 <td className="px-4 py-2">
                   特殊カードジャンケンでリアルタイム通信に使用
                 </td>
@@ -204,19 +320,17 @@ export default function Home() {
               <tr>
                 <td className="px-4 py-2">機械学習</td>
                 <td className="px-4 py-2">TensorFlow</td>
-                <td className="px-4 py-2">2024/05〜現在</td>
                 <td className="px-4 py-2">
-                  CIFAR-10、MNISTなどでモデル作成に使用
+                  CIFAR-10、MNISTなどでモデル作成するのに使用。またMNISTは精度99.40%を取得
                 </td>
               </tr>
               <tr>
                 <td className="px-4 py-2">言語</td>
                 <td className="px-4 py-2">
-                  Python, JavaScript, C# / Unity, C++
+                  Python, JavaScript, Unity(C#), C++
                 </td>
-                <td className="px-4 py-2">2023/04〜現在</td>
                 <td className="px-4 py-2">
-                  プログラミング言語全般を使用し、個人開発やインターンで活用
+                  ゲーム制作や学校での授業,競技プログラミングに使用。JavaScriptはインターンでも使用
                 </td>
               </tr>
             </tbody>
