@@ -17,11 +17,19 @@ export default function Home() {
           <p className="text-gray-600 text-center mt-2">
             強み : 楽しんで取り組めること
           </p>
+          <a
+            href="https://github.com/kusawokoshitemori"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1 mt-4 mb-2 text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white"
+          >
+            GitHubのページはこちら
+          </a>
         </div>
 
         {/* 右側のbox */}
         <div className="flex flex-col justify-center items-center w-1/2 pl-4">
-          <h3 className="text-xl font-semibold mb-2">使用技術</h3>
+          <h3 className="text-xl font-semibold mb-2">好きな技術</h3>
           <ul className="list-none text-gray-600">
             <li>TypeScript</li>
             <li>Next.js</li>
@@ -151,6 +159,83 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* 使用技術セクション */}
+      <section className="bg-white dark:bg-neutral-900 shadow-xl rounded-2xl p-6 mb-8">
+        <h2 className="text-2xl font-bold mb-4">使用技術</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full table-auto">
+            <thead>
+              <tr>
+                <th className="px-4 py-2 text-left">分類</th>
+                <th className="px-4 py-2 text-left">技術</th>
+                <th className="px-4 py-2 text-left">期間</th>
+                <th className="px-4 py-2 text-left">主な用途・実績</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-4 py-2">フロントエンド</td>
+                <td className="px-4 py-2">
+                  TypeScript, React, Next.js, Tailwind CSS
+                </td>
+                <td className="px-4 py-2">2024/07〜現在</td>
+                <td className="px-4 py-2">
+                  Web開発において、フロントエンドの基盤として使用
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">バックエンド</td>
+                <td className="px-4 py-2">Node.js, Express, Supabase</td>
+                <td className="px-4 py-2">2024/07〜現在</td>
+                <td className="px-4 py-2">
+                  API / ツール開発、認証・データベースに使用
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">リアルタイム通信</td>
+                <td className="px-4 py-2">Socket.io</td>
+                <td className="px-4 py-2">2025/01〜現在</td>
+                <td className="px-4 py-2">
+                  特殊カードジャンケンでリアルタイム通信に使用
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">機械学習</td>
+                <td className="px-4 py-2">TensorFlow</td>
+                <td className="px-4 py-2">2024/05〜現在</td>
+                <td className="px-4 py-2">
+                  CIFAR-10、MNISTなどでモデル作成に使用
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">言語</td>
+                <td className="px-4 py-2">
+                  Python, JavaScript, C# / Unity, C++
+                </td>
+                <td className="px-4 py-2">2023/04〜現在</td>
+                <td className="px-4 py-2">
+                  プログラミング言語全般を使用し、個人開発やインターンで活用
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* インターン経験 */}
+      <section className="bg-white dark:bg-neutral-900 shadow-xl rounded-2xl p-6">
+        <h2 className="text-2xl font-bold mb-4">インターン経験</h2>
+        <ol className="border-l-2 border-gray-300 dark:border-gray-700 pl-4 space-y-6">
+          <li>
+            <span className="text-sm text-gray-500">2025年2月</span>
+            <h3 className="font-semibold">合資会社パンダ工房（1か月/有給）</h3>
+            <p className="text-gray-600">
+              Backlogを使用してテキスト上でのやり取りを行い、HTMLの要素にクラスを割り当てたり要素を削除する社内ツールの制作(JavaScript,React使用)
+            </p>
+          </li>
+        </ol>
       </section>
     </main>
   );
